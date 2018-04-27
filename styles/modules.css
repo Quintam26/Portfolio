@@ -1,0 +1,12 @@
+.heading-group-h1 {
+    float: left;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  li, h2 {
+    display: inline-block;
+    padding: 10px;
+  }
