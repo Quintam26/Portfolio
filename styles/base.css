@@ -2,6 +2,11 @@ body {
     max-width: 100%;
 }
 
+#page1, #page2, #page3 {
+    text-align: center;
+    height: 1000px;
+}
+
 .site-header{
 	background-color: rgb(241, 218, 114);
 }
@@ -16,7 +21,7 @@ address {
   
 a, a:link, a:active {
     text-decoration: none;
-    color: #777;
+    color: black;
 }
   
 a:hover, a:focus {

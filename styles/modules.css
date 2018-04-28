@@ -18,15 +18,11 @@ h2 {
   right: 20px;
 }
 
-.main-nav {
-  padding: 0.1em;
-}
-
 .main-nav ul {
-  display: none;
-  padding: 0;
-  list-style: none;
   clear: both;
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
 }
 
 .main-nav:hover ul {
@@ -73,6 +69,7 @@ input {
 
 .main-nav input:checked  ~ ul li {
   display: block;
+  float: left;
   width: 100%;
   border-bottom: 1px solid gray;
 }
@@ -82,9 +79,19 @@ input {
       display: none;
   }
   .main-nav ul {
-    display: block
+    display: block;
   }
   .main-nav li {
     display: inline;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .name {
+    visibility: hidden;
+  }
+  .name:before {
+    content: 'MQ';
+    visibility:visible;
   }
 }
