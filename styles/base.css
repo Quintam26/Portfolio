@@ -1,6 +1,25 @@
 body {
     max-width: 100%;
 }
+
 .site-header{
 	background-color: rgb(241, 218, 114);
 }
+
+p {
+    font-size: 1em;
+ }
+  
+address {
+    display: inline-block;
+}
+  
+a, a:link, a:active {
+    text-decoration: none;
+    color: #777;
+}
+  
+a:hover, a:focus {
+    color: #29506D;
+}
+  

@@ -6,7 +6,64 @@
     float: right;
   }
 
-  li, h2 {
+  h2 {
     display: inline-block;
     padding: 10px;
   }
+  
+.icon-menu {
+	font-size: 40px;
+	float: right
+}
+
+.main-nav {
+  padding: 0.1em;
+}
+
+.main-nav ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+.main-nav:hover ul {
+  display: block;
+}
+
+.main-nav li {
+  display: block;
+  margin-right: .4em;
+  font-size: 1.5em;
+  padding: .5em .2em;
+}
+
+#filters {
+  padding: 0;
+  list-style: none;
+}
+
+.template {
+  display: none;
+}
+
+.byline {
+  color: #777;
+}
+
+.byline a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 640px) {
+  .icon-menu {
+      display: none;
+  }
+  .main-nav ul {
+    display: block
+  }
+  .main-nav li {
+    display: inline;
+  }
+}
