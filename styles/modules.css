@@ -48,8 +48,8 @@ input {
   top: 20px;
   right: 20px;
   cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0;
+  z-index: 2; 
   -webkit-touch-callout: none;
 }
 
@@ -88,6 +88,6 @@ input {
 
 @media screen and (max-width: 640px) {
   .column {
-      width: 100%;
+      width: 85%;
   }
 }
