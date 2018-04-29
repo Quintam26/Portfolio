@@ -29,8 +29,8 @@
         <main>
             <div id="page1">
                 <a id="home" class="smooth"></a>
-                    Home page content goes here.
-                </div>
+                Home page content goes here.
+            </div>
             <div id="page2">
                 <a id="about" class="smooth"></a>
                 About page content goes here.
@@ -48,16 +48,14 @@
             &copy; 2018 MQ | Portfolio | Developer
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
             <script>
-                $('.smooth').on('click', function() {
-                    $.smoothScroll({
-                    scrollElement: $('body'),
-                    scrollTarget: '#' + this.id
-                });
-    
-                    return false;
-                });
+                $(document).on('click', 'a[href^="#"]', function (event) {
+                    event.preventDefault();
+
+                 $('html, body').animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                    }, 500);
+                    });
             </script>
     </body>
 </html>
