@@ -3,7 +3,7 @@
 var projectsData = [
   {
     title: 'Salmon Cookies',
-    image: 'https://lh3.googleusercontent.com/lHK_slltGi0pvm6Gt9VjkB695KXQEXdP-c0ylGiuFkhs-2ifVVXLTUMuTe-BQXh0cQdq_oBva0vpqJ7e6NhpykVj4VYSA-DswSbx12x-3XyeN7zt-xBZLxPX_gqXgLwOxVmgx3zw=w2400',
+    imageURL: 'https://lh3.googleusercontent.com/lHK_slltGi0pvm6Gt9VjkB695KXQEXdP-c0ylGiuFkhs-2ifVVXLTUMuTe-BQXh0cQdq_oBva0vpqJ7e6NhpykVj4VYSA-DswSbx12x-3XyeN7zt-xBZLxPX_gqXgLwOxVmgx3zw=w2400',
 
     body:  '<p>This was my first major coding project. The goal was to create webpage that took in user data to generate random cookie sales for a new shop. The random number generator used the average sales of other shops to create a realistic number.</p>'
   },

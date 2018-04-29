@@ -41,23 +41,13 @@
                 </p>
             </div>
             <div id="page3">
-                <a id="portfolio" class="smooth"></a>
                     <h1>Portfolio</h1>
+                <a id="portfolio" class="smooth"></a>
                     <div class="row">
                         <div class="column">
-                            <img class="port" src='https://lh3.googleusercontent.com/lHK_slltGi0pvm6Gt9VjkB695KXQEXdP-c0ylGiuFkhs-2ifVVXLTUMuTe-BQXh0cQdq_oBva0vpqJ7e6NhpykVj4VYSA-DswSbx12x-3XyeN7zt-xBZLxPX_gqXgLwOxVmgx3zw=w2400' /></a>
-                            <h2>Salmon Cookies</h2>
-                            <p>This was my first major coding project. The goal was to create webpage that took in user data to generate random cookie sales for a new shop. The random number generator used the average sales of other shops to create a realistic number.</p>
-                        </div>
-                        <div class="column">
-                            <img class="port" src='https://lh3.googleusercontent.com/yJgkT4xNWKmA99_w3ZdNEEJOn8O-MSV0BqrK2v0BFHuCYA7NBN-BS2PIsdnA1vu730Qf9vDlmCsJtOk5YRvJy775MNFR2F6vy1PVbdp6Vk5FPDOiUpMyTDkLX60EbmOYcTLm5Ur1=w2400' /></a>
-                            <h2>Busmall</h2>
-                            <p>This project involved creating an app that implemented user settings to display the number of images in the desired number of rounds. A bar graph appears in the end showing the number of times an item was clicked on.</p>
-                        </div>
-                        <div class="column">
-                            <img class="port" src='https://lh3.googleusercontent.com/omiI9HY8R_Ao-fH-5nszRCUapeBeYdLOtSEhIWNo3uRhFmCR5vdIgrsBzLuggg4DQmate7gaYKx6aP7Vs2AJGYTKSGM3FdhRICDYvW93WctZ-ZrDZF4ftNZuwV9ueJBQpwO8YT6u=w2400' /></a>
-                            <h2>Pane Relief</h2>
-                            <p>This final project was completed for Bootcamp 201. It takes user input to create a canvas depicting weather that reflects one's mood. User settings settings can be saved for future access as well.</p>
+                            <img src="">
+                            <h2>Title</h2>
+                            <p>Body</p>
                         </div>
                   </div>
             </div>
@@ -73,14 +63,16 @@
             &copy; 2018 Mario Quintana | Portfolio | Software Developer
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-            <script>
-                $(document).on('click', 'a[href^="#"]', function (event) {
-                    event.preventDefault();
+        <script>
+            $(document).on('click', 'a[href^="#"]', function (event) {
+                event.preventDefault();
 
-                 $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top
-                    }, 500);
-                    });
-            </script>
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+                }, 500);
+                });
+        </script>
+        <script type="text/javascript" src="scripts/data.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
     </body>
 </html>
