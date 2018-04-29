@@ -2,33 +2,85 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <title>Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="vendor/styles/normalize.css">
+        <link rel="stylesheet" href="styles/icon.css">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/layout.css">
         <link rel="stylesheet" href="styles/modules.css">
-        
-        <title>Portfolio 1</title>
     </head>
     <body>
         <header class="site-header">
             <section class="heading-group-h1">
-                    <h2>Mario Quintana</h2>
+                    <h2 class="name">Mario Quintana</h2>
             </section>
             <nav class="main-nav">
-                <span class="Icon-menu"></span>
-                <!-- <input type="checkbox"> -->
-
+                <span class="icon-menu"></span>
+                <input type="checkbox">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h2></h2>
-            <p></p>
+            <div id="page1">
+                <a id="home" class="smooth"></a>
+               <img class="cloud" src='https://lh3.googleusercontent.com/X1ykTz-iJeeuTVwdioVVkhhML4sjd_7RYpbykSVdQvLPjQzNVdRqMgv2rq1IqoRW2lJQ5Y5qCVshEKtvROL2IyP52B7KX9hV7SKKi9TRyhpflbre_ZWzxoSOeHYVIo30qCVULAMk7Q=w2400' /></a>
+            </div>
+            <div id="page2">
+                <a id="about" class="smooth"></a>
+                <a href='https://photos.google.com/share/AF1QipOSAG5n1q4Z1tQaRGRItUSEdfBAe66ayaeU7zjjYLLbDKYeXw4cBEMChi-t20Waeg?key=ZTFNS3Jtem9VSndjcWpHQkw4WHZiYzlKVzc1ZGR3&source=ctrlq.org'><img src='https://lh3.googleusercontent.com/4pfOh3a7LiU0r2RubwmHkCikkvpwkBYnh1xYD-Q_5CzjtUso_jkgk-4U3EYecGVQNcUdzm2LIO_zPdh-nniqxmiNQsavWV-mif-2d9UaZNCNaCDsHjXkT3NaaogiLQJMynDFVX2h=w2400' /></a>
+                <h1>About me</h1>
+                <br>
+                <p>I was born and raised in Hood River, Oregon with 6 other siblings and currently I am in school.
+                    I hope to become a fulll stack JavaScript Developer in the next few months. My hobbies include weightlifting, reading, and learning new things. I also have a dog named Lucy who is a german shepard and labrador mix. 
+                </p>
+            </div>
+            <div id="page3">
+                <a id="portfolio" class="smooth"></a>
+                    <h1>Portfolio</h1>
+                    <div class="row">
+                        <div class="column">
+                            <img class="port" src='https://lh3.googleusercontent.com/lHK_slltGi0pvm6Gt9VjkB695KXQEXdP-c0ylGiuFkhs-2ifVVXLTUMuTe-BQXh0cQdq_oBva0vpqJ7e6NhpykVj4VYSA-DswSbx12x-3XyeN7zt-xBZLxPX_gqXgLwOxVmgx3zw=w2400' /></a>
+                            <h2>Salmon Cookies</h2>
+                            <p>This was my first major coding project. The goal was to create webpage that took in user data to generate random cookie sales for a new shop. The random number generator used the average sales of other shops to create a realistic number.</p>
+                        </div>
+                        <div class="column">
+                            <img class="port" src='https://lh3.googleusercontent.com/yJgkT4xNWKmA99_w3ZdNEEJOn8O-MSV0BqrK2v0BFHuCYA7NBN-BS2PIsdnA1vu730Qf9vDlmCsJtOk5YRvJy775MNFR2F6vy1PVbdp6Vk5FPDOiUpMyTDkLX60EbmOYcTLm5Ur1=w2400' /></a>
+                            <h2>Busmall</h2>
+                            <p>This project involved creating an app that implemented user settings to display the number of images in the desired number of rounds. A bar graph appears in the end showing the number of times an item was clicked on.</p>
+                        </div>
+                        <div class="column">
+                            <img class="port" src='https://lh3.googleusercontent.com/omiI9HY8R_Ao-fH-5nszRCUapeBeYdLOtSEhIWNo3uRhFmCR5vdIgrsBzLuggg4DQmate7gaYKx6aP7Vs2AJGYTKSGM3FdhRICDYvW93WctZ-ZrDZF4ftNZuwV9ueJBQpwO8YT6u=w2400' /></a>
+                            <h2>Pane Relief</h2>
+                            <p>This final project was completed for Bootcamp 201. It takes user input to create a canvas depicting weather that reflects one's mood. User settings settings can be saved for future access as well.</p>
+                        </div>
+                  </div>
+            </div>
+            <div id="page4">
+                <a id="contact" class="smooth"></a>
+                <h1>Contact</h1>
+                <a href="https://github.com/Quintam26"><span class="icon-github"></span></a>
+                <a href="https://www.linkedin.com/in/mario-quintana-92868173/"><span class="icon-linkedin"></span></a>
+                <a href="https://codepen.io/Quintam/"><span class="icon-codepen"></span></a>
+            </div>
         </main>
+        <footer>
+            &copy; 2018 Mario Quintana | Portfolio | Software Developer
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+            <script>
+                $(document).on('click', 'a[href^="#"]', function (event) {
+                    event.preventDefault();
+
+                 $('html, body').animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                    }, 500);
+                    });
+            </script>
     </body>
 </html>

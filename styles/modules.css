@@ -1,12 +1,93 @@
 .heading-group-h1 {
-    float: left;
-  }
+  float: left;
+}
 
-  .main-nav {
-    float: right;
-  }
+.main-nav {
+  float: right;
+}
 
-  li, h2 {
-    display: inline-block;
-    padding: 10px;
+.name {
+  display: inline-block;
+  padding: 10px;
+}
+  
+.icon-menu {
+	font-size: 50px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.icon-github, .icon-linkedin, .icon-codepen {
+  font-size: 70px;
+  padding: 30px;
+}
+
+.main-nav ul {
+  clear: both;
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.main-nav:hover ul {
+  display: block;
+}
+
+.main-nav li {
+  display: none;
+  margin-right: .4em;
+  font-size: 1.5em;
+  padding: .5em .2em;
+}
+
+input {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+
+.main-nav input:checked  ~ ul li {
+  display: block;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid rgb(100,100,100);
+} 
+
+.port {
+  text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+  .icon-menu, input {
+      display: none;
   }
+  .main-nav ul {
+    display: block;
+  }
+  .main-nav li {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .name {
+    visibility: hidden;
+  }
+  .name:before {
+    content: 'MQ';
+    visibility:visible;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .column {
+      width: 85%;
+  }
+}

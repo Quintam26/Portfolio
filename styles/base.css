@@ -1,6 +1,40 @@
-body {
-    max-width: 100%;
+
+img {
+    max-width: 85%;
+    border: 2px solid black;
+    border-radius: 1em;
 }
+
+.cloud {
+    border: none;
+    max-width: 85%;
+    margin-top: 200px;
+}
+
+#page1, #page2, #page3, #page4 {
+    text-align: center;
+    height: 1200px;
+}
+
 .site-header{
 	background-color: rgb(241, 218, 114);
 }
+
+p {
+    font-size: 1.5em;
+    text-align: center;
+ }
+  
+address {
+    display: inline-block;
+}
+
+a, a:link, a:active {
+    text-decoration: none;
+    color: black;
+}
+  
+a:hover, a:focus {
+    color: rgb(253, 253, 253);
+}
+  
