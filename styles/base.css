@@ -2,9 +2,15 @@ body {
     max-width: 100%;
 }
 
+img {
+    max-width: 80%;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
 #page1, #page2, #page3, #page4 {
     text-align: center;
-    height: 1200px;
+    height: 1000px;
 }
 
 .site-header{
@@ -12,7 +18,8 @@ body {
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.5em;
+    text-align: center;
  }
   
 address {

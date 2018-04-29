@@ -6,7 +6,7 @@
   float: right;
 }
 
-h2 {
+.name {
   display: inline-block;
   padding: 10px;
 }
@@ -16,6 +16,10 @@ h2 {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+.icon-github, .icon-linkedin, .icon-codepen {
+  font-size: 70px;
+  padding: 30px;
 }
 
 .main-nav ul {
