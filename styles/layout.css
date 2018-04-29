@@ -1,21 +1,32 @@
 header {
-    clear: both;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+  clear: both;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 30px;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 footer {
   text-align: center;
-  padding: 20px;
 }
 
 .heading-group-h1 {
     max-width: 100%;
-  }
+}
 
    
