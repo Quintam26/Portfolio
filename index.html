@@ -63,20 +63,7 @@
             &copy; 2018 Mario Quintana | Portfolio | Software Developer
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script>
-            $(document).on('click', 'a[href^="#"]', function (event) {
-                event.preventDefault();
-
-            $('html, body').animate({
-                scrollTop: $($.attr(this, 'href')).offset().top
-                }, 500);
-                });
-            $(document).on('click', 'a[href^="#"]', function (event) {
-                event.preventDefault();
-
-                $('input').filter(':checkbox').prop('checked',false);
-            });
-        </script>
+        <script type="text/javascript" src="scripts/animation.js"></script>
         <script type="text/javascript" src="scripts/data.js"></script>
         <script type="text/javascript" src="scripts/app.js"></script>
     </body>
