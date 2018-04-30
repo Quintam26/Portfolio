@@ -9,10 +9,11 @@ function Project (rawDataObj) {
   }
   
   Project.prototype.toHtml = function() {
-    var $newProject = $('div#page3').clone();
-    $newProject.find('#portfolio img').attr('src', this.imageURL);
-    $newProject.find('#portfolio h2').html(this.title);
-    $newProject.find('#portfolio p').html(this.body);
+    var $newProject = $('.template').clone();
+    $newProject.removeClass('template');
+    $newProject.find('img').attr('src', this.imageURL);
+    $newProject.find('h2').html(this.title);
+    $newProject.find('p').html(this.body);
     return $newProject;
   };
 
@@ -21,7 +22,7 @@ function Project (rawDataObj) {
   });
   
   projects.forEach(function(project) {
-    $('#portfolio').append(project.toHtml());
+    $('#page3 .row').append(project.toHtml());
   });
   
   
