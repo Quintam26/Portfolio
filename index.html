@@ -71,6 +71,11 @@
                 scrollTop: $($.attr(this, 'href')).offset().top
                 }, 500);
                 });
+            $(document).on('click', 'a[href^="#"]', function (event) {
+                event.preventDefault();
+
+                $('input').filter(':checkbox').prop('checked',false);
+            });
         </script>
         <script type="text/javascript" src="scripts/data.js"></script>
         <script type="text/javascript" src="scripts/app.js"></script>

@@ -84,10 +84,9 @@ input {
     content: 'MQ';
     visibility:visible;
   }
-}
-
-@media screen and (max-width: 640px) {
-  .column {
-      width: 85%;
+  .row {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
   }
 }
