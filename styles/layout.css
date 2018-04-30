@@ -8,17 +8,8 @@ header {
   position: sticky;
   top: 0;
 }
-.column {
-  float: left;
-  width: 30%;
-  padding: 30px;
-
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.row{
+  display: flex;
 }
 
 footer {
