@@ -9,8 +9,7 @@ function Project (rawDataObj) {
   }
   
   Project.prototype.toHtml = function() {
-    var $newProject = $('#portfolio.smooth').clone();
-    $newProject.removeClass('smooth');
+    var $newProject = $('div#page3').clone();
     $newProject.find('#portfolio img').attr('src', this.imageURL);
     $newProject.find('#portfolio h2').html(this.title);
     $newProject.find('#portfolio p').html(this.body);
