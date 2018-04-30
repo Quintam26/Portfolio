@@ -1,6 +1,6 @@
 'use strict';
 
-var projectsData = [
+var rawData = [
   {
     title: 'Salmon Cookies',
     imageURL: 'https://lh3.googleusercontent.com/lHK_slltGi0pvm6Gt9VjkB695KXQEXdP-c0ylGiuFkhs-2ifVVXLTUMuTe-BQXh0cQdq_oBva0vpqJ7e6NhpykVj4VYSA-DswSbx12x-3XyeN7zt-xBZLxPX_gqXgLwOxVmgx3zw=w2400',
