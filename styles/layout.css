@@ -1,3 +1,4 @@
+
 header {
   clear: both;
   list-style-type: none;
@@ -8,17 +9,8 @@ header {
   position: sticky;
   top: 0;
 }
-.column {
-  float: left;
-  width: 30%;
-  padding: 30px;
-
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.row{
+  display: flex;
 }
 
 footer {
@@ -28,5 +20,3 @@ footer {
 .heading-group-h1 {
   max-width: 100%;
 }
-
-   

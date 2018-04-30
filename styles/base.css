@@ -21,10 +21,14 @@ img {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 30px;
     text-align: center;
  }
-  
+
+#p3 {
+    text-align: center;
+}
+
 address {
     display: inline-block;
 }
@@ -34,7 +38,7 @@ a, a:link, a:active {
     color: black;
 }
   
-a:hover, a:focus {
+.main-nav a:hover, .main-nav a:focus {
     color: rgb(253, 253, 253);
 }
   

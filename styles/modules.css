@@ -1,3 +1,4 @@
+
 .heading-group-h1 {
   float: left;
 }
@@ -19,7 +20,7 @@
 }
 .icon-github, .icon-linkedin, .icon-codepen {
   font-size: 70px;
-  padding: 30px;
+  margin: 50px;
 }
 
 .main-nav ul {
@@ -60,10 +61,6 @@ input {
   border-bottom: 1px solid rgb(100,100,100);
 } 
 
-.port {
-  text-align: center;
-}
-
 @media screen and (min-width: 640px) {
   .icon-menu, input {
       display: none;
@@ -84,10 +81,9 @@ input {
     content: 'MQ';
     visibility:visible;
   }
-}
-
-@media screen and (max-width: 640px) {
-  .column {
-      width: 85%;
+  .row {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
   }
 }
