@@ -15,8 +15,8 @@ $('.main-nav ul').on('click', '#about-tab', function(event) {
 $('.heading-group-h1 h2.name').on('click', function(event) {
     $('#page1, #page2, #page3, #page4').fadeIn();
     });
-
 };
+
 
 $(document).ready(function() {
     pageView.handleMainNav();
