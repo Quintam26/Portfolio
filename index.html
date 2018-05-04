@@ -9,6 +9,15 @@
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/layout.css">
         <link rel="stylesheet" href="styles/modules.css">
+
+        <script id="article-template" type="text/x-handlebars-template">
+            <div class="column template">
+                    <h2>{{title}}</h2>
+                    <img src="{{imageURL}}">
+                    <p>{{{body}}}</p>
+            </div>
+        </script>
+
     </head>
     <body>
         <header class="site-header">
@@ -63,11 +72,8 @@
             &copy; 2018 Mario Quintana | Portfolio | Software Developer
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script>
-        $(document).on('click', 'a[href^="#"]', function (event) {    
-            $('input').filter(':checkbox').prop('checked',false);
-        });</script>
-        <!-- <script type="text/javascript" src="scripts/animation.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+        <script type="text/javascript" src="scripts/animation.js"></script>
         <script type="text/javascript" src="scripts/nav.js"></script>
         <script type="text/javascript" src="scripts/data.js"></script>
         <script type="text/javascript" src="scripts/app.js"></script>

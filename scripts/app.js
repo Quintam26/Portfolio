@@ -8,14 +8,11 @@ function Project (rawDataObj) {
      this.body = rawDataObj.body;
   }
   
-  Project.prototype.toHtml = function() {
-    var $newProject = $('.template').clone();
-    $newProject.removeClass('template');
-    $newProject.find('img').attr('src', this.imageURL);
-    $newProject.find('h2').html(this.title);
-    $newProject.find('p').html(this.body);
-    return $newProject;
-  };
+Project.prototype.toHtml = function() {
+    var templateFiller = Handlebars.compile( $( '#article-template' ).html() );
+    var filledTemplate = templateFiller( this );
+    return filledTemplate;
+};
 
   rawData.forEach(function(projectObject) {
     projects.push(new Project(projectObject));
