@@ -14,14 +14,29 @@ Project.prototype.toHtml = function() {
     return filledTemplate;
 };
 
+Project.loadAll = function(rawData) {
   rawData.forEach(function(projectObject) {
     projects.push(new Project(projectObject));
   });
-  
-  projects.forEach(function(project) {
-    $('#page3 .row').append(project.toHtml());
-  });
-  
-  var ourRequest = new XMLHttpRequest();
-  ourRequest.open('GET', '');
+}
+
+Project.fetchAll = function() {
+  if(localStorage.rawData) {
+  var parsedData = JSON.parse(localStorage.rawData);
+  console.log(localStorage.rawData);
+Project.loadAll(parsedData);
+  console.log(localStorage.rawData);
+  pageView.initPage();
+  } else {
+    $.ajax({
+      dataType: 'json',
+      url:'../scripts/data.json',
+      data: "data",
+      success: function (rawData) {
+      localStorage.setItem("data", JSON.stringify(rawData));
+      }
+    });
+    pageView.initPage();
+     };
+}
   
