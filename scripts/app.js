@@ -22,4 +22,6 @@ Project.prototype.toHtml = function() {
     $('#page3 .row').append(project.toHtml());
   });
   
+  var ourRequest = new XMLHttpRequest();
+  ourRequest.open('GET', '');
   
