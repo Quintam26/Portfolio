@@ -77,20 +77,18 @@
         <script type="text/javascript" src="scripts/nav.js"></script>
         <script type="text/javascript" src="scripts/animation.js"></script>
         <script>
-            document.getElementById('button').addEventListener('click', loadData);
+            // document.getElementById('button').addEventListener('click');
    
-            function loadData() {
-                var xhr = new XMLHttpRequest();
-                console.log(xhr);
-                xhr.open('GET', 'data.json', true);
-                xhr.onload = function() {
-                    if(this.status == 200){
-                        console.log(this.responseText)
-
+            $(function() {
+                $.ajax({
+                type: 'GET',
+                url: 'json/data.json', 
+                dataType: 'json',
+                success: function(data) {
+                console.log('success',data);
                     }
-                }
-                xhr.send();
-            };
+                });
+            });
            </script>
     </body>
 </html>
