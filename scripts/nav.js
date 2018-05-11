@@ -1,11 +1,5 @@
-'use strict';
-var pageView = {};
-
-pageView.initPage = function() {
-    Project.forEach(function(project) {
-      $('#page3 .row').append(project.toHtml())
-    });
-}
+// 'use strict';
+// var pageView = {};
 
 // pageView.handleMainNav = function() {
 // $('.main-nav ul').on('click', '#home-tab', function(event) {
