@@ -79,7 +79,7 @@ input {
   }
   .name:before {
     content: 'MQ';
-    visibility:visible;
+    visibility: visible;
   }
   .row {
     max-width: 100%;

@@ -49,7 +49,7 @@
                 </p>
             </div>
             <h1 id="p3">Portfolio</h1>
-            <button id="btn">Retreive a project</button>
+            <button id="button">Retreive a project</button>
             <div id="page3">
                     <a id="portfolio" class="smooth"></a>
                         <div class="row">
@@ -77,7 +77,20 @@
         <script type="text/javascript" src="scripts/nav.js"></script>
         <script type="text/javascript" src="scripts/animation.js"></script>
         <script>
-         
-        </script>
+            document.getElementById('button').addEventListener('click', loadData);
+   
+            function loadData() {
+                var xhr = new XMLHttpRequest();
+                console.log(xhr);
+                xhr.open('GET', 'data.json', true);
+                xhr.onload = function() {
+                    if(this.status == 200){
+                        console.log(this.responseText)
+
+                    }
+                }
+                xhr.send();
+            };
+           </script>
     </body>
 </html>
