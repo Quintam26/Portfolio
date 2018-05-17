@@ -77,15 +77,13 @@
         <script type="text/javascript" src="scripts/nav.js"></script>
         <script type="text/javascript" src="scripts/animation.js"></script>
         <script>
-            // document.getElementById('button').addEventListener('click');
-   
-            $(function() {
+            document.getElementById('button').addEventListener('click', function() {
                 $.ajax({
                 type: 'GET',
                 url: 'json/data.json', 
                 dataType: 'json',
                 success: function(data) {
-                console.log('success',data);
+                    console.log(data);
                     }
                 });
             });
