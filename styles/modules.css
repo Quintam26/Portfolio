@@ -58,7 +58,7 @@ input {
   display: block;
   float: left;
   width: 100%;
-  border-bottom: 1px solid rgb(100,100,100);
+  /* border-bottom: 1px solid rgb(100,100,100); */
 } 
 
 @media screen and (min-width: 640px) {

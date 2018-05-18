@@ -1,4 +1,5 @@
 var projectContainer = document.getElementById('page3');
+var pageCounter = 0;
 
 document.getElementById('button').addEventListener('click', function() {
     $.ajax({
@@ -9,6 +10,11 @@ document.getElementById('button').addEventListener('click', function() {
         renderHTML(data);
         }
     });
+    pageCounter++;
+    if(pageCounter > 2){
+        button.classList.add('hide-me');
+    };
+    console.log('count is', pageCounter);
 });
 
 function renderHTML(data){

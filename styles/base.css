@@ -39,6 +39,10 @@ button {
     display:block;
 }
 
+.hide-me {
+    display: none;
+}
+
 #p3 {
     text-align: center;
 }
