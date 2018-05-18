@@ -1,23 +1,20 @@
-// 'use strict';
+var projectContainer = document.getElementById('page3');
 
+document.getElementById('button').addEventListener('click', function() {
+    $.ajax({
+    type: 'GET',
+    url: 'json/data.json', 
+    dataType: 'json',
+    success: function(data) {
+        renderHTML(data);
+        }
+    });
+});
 
-// function Project (rawDataObj) {
-//      this.imageURL = rawDataObj.imageURL;
-//      this.title = rawDataObj.title;
-//      this.body = rawDataObj.body;
-//   }
-  
-// Project.prototype.toHtml = function() {
-//     var templateFiller = Handlebars.compile( $( '#article-template' ).html() );
-//     var filledTemplate = templateFiller( this );
-//     return filledTemplate;
-// };
-
-// Project.loadAll = function(rawData) {
-//     rawData.forEach(function(projectObject) {
-//     projects.push(new Project(projectObject));
-//   });
-// }
-
-
-
+function renderHTML(data){
+    var htmlData = '';
+    for(i = 0; i < data.length; i++ ){
+        htmlData += data[i].title + data[i].imageURL + data[i].body; 
+    }
+    projectContainer.insertAdjacentHTML('beforeend', htmlData);
+}

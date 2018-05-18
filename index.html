@@ -9,31 +9,25 @@
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/layout.css">
         <link rel="stylesheet" href="styles/modules.css">
-
-        <script id="article-template" type="text/x-handlebars-template">
-            <div class="column template">
-                    <h2>{{title}}</h2>
-                    <img src="{{imageURL}}">
-                    <p>{{{body}}}</p>
-            </div>
-        </script>
     </head>
+
     <body>
         <header class="site-header">
             <section class="heading-group-h1">
                     <h2 class="name">Mario Quintana</h2>
             </section>
-            <nav class="main-nav">
-                <span class="icon-menu"></span>
-                <input type="checkbox">
-                <ul>
-                    <li id="home-tab"><a href="#home">Home</a></li>
-                    <li id="about-tab"><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+                <nav class="main-nav">
+                 <span class="icon-menu"></span>
+                    <input type="checkbox">
+                    <ul>
+                        <li id="home-tab"><a href="#home">Home</a></li>
+                        <li id="about-tab"><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
         </header>
+
         <main>
             <div id="page1">
                 <a id="home" class="smooth"></a>
@@ -41,52 +35,34 @@
             </div>
             <div id="page2">
                 <a id="about" class="smooth"></a>
-                <h1>About me</h1>
-                <img src="https://lh3.googleusercontent.com/4pfOh3a7LiU0r2RubwmHkCikkvpwkBYnh1xYD-Q_5CzjtUso_jkgk-4U3EYecGVQNcUdzm2LIO_zPdh-nniqxmiNQsavWV-mif-2d9UaZNCNaCDsHjXkT3NaaogiLQJMynDFVX2h=w2400"/>
-                <br>
-                <p>I was born and raised in Hood River, Oregon with 6 other siblings and currently I am in school.
+                    <h1>About me</h1>
+                    <img src="https://lh3.googleusercontent.com/4pfOh3a7LiU0r2RubwmHkCikkvpwkBYnh1xYD-Q_5CzjtUso_jkgk-4U3EYecGVQNcUdzm2LIO_zPdh-nniqxmiNQsavWV-mif-2d9UaZNCNaCDsHjXkT3NaaogiLQJMynDFVX2h=w2400"/>
+                    <br>
+                    <p>I was born and raised in Hood River, Oregon with 6 other siblings and currently I am in school.
                     I hope to become a fulll stack JavaScript Developer in the next few months. My hobbies include weightlifting, reading, and learning new things. I also have a dog named Lucy who is a german shepard and labrador mix. 
-                </p>
+                    </p>
             </div>
-            <h1 id="p3">Portfolio</h1>
-            <button id="button">Retreive a project</button>
+                <h1 id="p3">Portfolio</h1>
+                <button id="button">Retreive a project</button>
             <div id="page3">
-                    <a id="portfolio" class="smooth"></a>
-                        <div class="row">
-                            <div class="column template">
-                                <img src="">
-                                <h2></h2>
-                                <p></p>
-                            </div>
-                        </div>
+                <a id="portfolio" class="smooth"></a>     
             </div>
             <div id="page4">
                 <a id="contact" class="smooth"></a>
-                <h1>Contact</h1>
-                <a href="https://github.com/Quintam26"><span class="icon-github"></span></a>
-                <a href="https://www.linkedin.com/in/mario-quintana-92868173/"><span class="icon-linkedin"></span></a>
-                <a href="https://codepen.io/Quintam/"><span class="icon-codepen"></span></a>
+                    <h1>Contact</h1>
+                    <a href="https://github.com/Quintam26"><span class="icon-github"></span></a>
+                    <a href="https://www.linkedin.com/in/mario-quintana-92868173/"><span class="icon-linkedin"></span></a>
+                    <a href="https://codepen.io/Quintam/"><span class="icon-codepen"></span></a>
             </div>
         </main>
+
         <footer>
             &copy; 2018 Mario Quintana | Portfolio | Software Developer
         </footer>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
         <script type="text/javascript" src="scripts/app.js"></script>
-        <script type="text/javascript" src="scripts/nav.js"></script>
         <script type="text/javascript" src="scripts/animation.js"></script>
-        <script>
-            document.getElementById('button').addEventListener('click', function() {
-                $.ajax({
-                type: 'GET',
-                url: 'json/data.json', 
-                dataType: 'json',
-                success: function(data) {
-                    console.log(data);
-                    }
-                });
-            });
-           </script>
+    
     </body>
 </html>

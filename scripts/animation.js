@@ -1,5 +1,4 @@
 
-//Scrolling effect
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
@@ -8,7 +7,6 @@ $('html, body').animate({
     }, 500);
 });
 
-//Closing bugrer menu after selecting option
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
