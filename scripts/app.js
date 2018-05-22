@@ -1,4 +1,4 @@
-var projectContainer = document.getElementById('page3');
+
 var pageCounter = 0;
 
 document.getElementById('button').addEventListener('click', function() {
@@ -10,17 +10,15 @@ document.getElementById('button').addEventListener('click', function() {
         renderHTML(data);
         }
     });
-    pageCounter++;
-    if(pageCounter > 2){
-        button.classList.add('hide-me');
-    };
-    console.log('count is', pageCounter);
 });
 
 function renderHTML(data){
+    var projectContainer = document.getElementById('page3');
     var htmlData = '';
-    for(i = 0; i < data.length; i++ ){
-        htmlData += data[i].title + data[i].imageURL + data[i].body; 
-    }
+    htmlData += data[pageCounter].title + data[pageCounter].imageURL + data[pageCounter].body;
+    pageCounter++; 
     projectContainer.insertAdjacentHTML('beforeend', htmlData);
+    if(pageCounter >= data.length){
+        button.classList.add('hide-me');
+    };
 }
