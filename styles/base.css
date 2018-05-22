@@ -11,7 +11,7 @@ img {
     margin-top: 200px;
 }
 
-#page1, #page2, #page3, #page4 {
+section {
     text-align: center;
     height: 1200px;
 }
@@ -41,10 +41,6 @@ button {
 
 .hide-me {
     display: none;
-}
-
-#p3 {
-    text-align: center;
 }
 
 address {

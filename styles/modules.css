@@ -51,7 +51,7 @@ input {
   cursor: pointer;
   opacity: 0;
   z-index: 2; 
-  -webkit-touch-callout: none;
+
 }
 
 .main-nav input:checked  ~ ul li {

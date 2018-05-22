@@ -13,7 +13,7 @@ document.getElementById('button').addEventListener('click', function() {
 });
 
 function renderHTML(data){
-    var projectContainer = document.getElementById('page3');
+    var projectContainer = document.getElementById('portfolio').parentNode;
     var htmlData = '';
     htmlData += data[pageCounter].title + data[pageCounter].imageURL + data[pageCounter].body;
     pageCounter++; 
