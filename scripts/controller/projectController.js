@@ -5,7 +5,7 @@ const projectController = {};
     
 projectController.home = function() {
     $('.tab-content').hide();
-    Project.fectchAll(pageView.initIndexPage);
+    Project.fetchAll();
     $('#page3').show();    
 }
     

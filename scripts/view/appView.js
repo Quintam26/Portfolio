@@ -10,6 +10,7 @@ pageView.initIndexPage = function() {
     });
 }
 
-Project.fetchAll(pageView.initIndexPage);
+Project.fetchAll();
+pageView.initIndexPage();
 module.pageView = pageView;
 })(window);

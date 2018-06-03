@@ -23,20 +23,20 @@ Project.loadAll = function(rawData) {
 
 Project.fetchAll = function() {
   if(localStorage.rawData){
-  var parsed = JSON.parse(localStorage.rawData);
-  Project.loadAll(parsed);
-  pageView.initIndexPage();
-} else {
+    var parsed = JSON.parse(localStorage.rawData);
+    Project.loadAll(parsed);
+    
+  } else {
     $.ajax({
     dataType: 'json',
-    url: '../data/projectsdata.json', 
+    url: '../data/projectsdata.json',
     data: 'data',
     success: function(data) {
     localStorage.setItem("rawData", JSON.stringify(data));
-    console.log(data);
-        }
+    Project.loadAll(data);
+
+      }
     });
-  pageView.initIndexPage();
   };
 }
 module.Project = Project;
