@@ -1,5 +1,7 @@
 'use strict';
 
+(function(module) {
+
 function Project (rawDataObj) {
      this.imageURL = rawDataObj.imageURL;
      this.title = rawDataObj.title;
@@ -19,21 +21,14 @@ Project.loadAll = function(rawData) {
   })
 }
 
-Project.fetchAll = function() {
-  if(localStorage.rawData){
-  var parsed = JSON.parse(localStorage.rawData);
-  Project.loadAll(parsed);
-  pageView.initIndexPage();
-} else {
-    $.ajax({
-    dataType: 'json',
-    url: '../data/projectsdata.json', 
-    data: 'data',
-    success: function(data) {
-    localStorage.setItem("rawData", JSON.stringify(data));
-    console.log(data);
-        }
-    });
-  pageView.initIndexPage();
-  };
-}
+Project.fetchAll = callback => {
+  $.get('/projects')
+  .then(
+    results => {
+      Project.loadAll(results);
+      callback();
+    }
+  )
+};
+module.Project = Project;
+})(window);
