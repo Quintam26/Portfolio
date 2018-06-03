@@ -35,4 +35,5 @@ Project.fetchAll = function() {
   pageView.initIndexPage();
   }
   });
-};
+  };
+}
