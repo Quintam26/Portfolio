@@ -17,10 +17,6 @@ $('.heading-group-h1 h2.name').on('click', function(event) {
     });
 };
 
-$(document).on('click', 'a[href^="#"]', function (event) {    
-    $('input').filter(':checkbox').prop('checked',false);
-});
-
 $(document).ready(function() {
     pageView.handleMainNav();
   });

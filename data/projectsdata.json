@@ -1,0 +1,17 @@
+[
+    {
+      "title": "<h2>Salmon Cookies</h2>",
+      "imageURL": "<img src ='https://lh3.googleusercontent.com/lHK_slltGi0pvm6Gt9VjkB695KXQEXdP-c0ylGiuFkhs-2ifVVXLTUMuTe-BQXh0cQdq_oBva0vpqJ7e6NhpykVj4VYSA-DswSbx12x-3XyeN7zt-xBZLxPX_gqXgLwOxVmgx3zw=w2400'>",
+      "body": "<p>This was my first major coding project. The goal was to create webpage that took in user data to generate random cookie sales for a new shop. The random number generator used the average sales of other shops to create a realistic number.</p>"
+    },
+    {
+      "title": "<h2>Busmall</h2>",
+      "imageURL": "<img src='https://lh3.googleusercontent.com/yJgkT4xNWKmA99_w3ZdNEEJOn8O-MSV0BqrK2v0BFHuCYA7NBN-BS2PIsdnA1vu730Qf9vDlmCsJtOk5YRvJy775MNFR2F6vy1PVbdp6Vk5FPDOiUpMyTDkLX60EbmOYcTLm5Ur1=w2400'>",
+      "body": "<p>This project involved creating an app that implemented user settings to display the number of images in the desired number of rounds. A bar graph appears in the end showing the number of times an item was clicked on.</p>"
+    },
+    {
+      "title": "<h2>Pane Reflief</h2>",
+      "imageURL": "<img src='https://lh3.googleusercontent.com/omiI9HY8R_Ao-fH-5nszRCUapeBeYdLOtSEhIWNo3uRhFmCR5vdIgrsBzLuggg4DQmate7gaYKx6aP7Vs2AJGYTKSGM3FdhRICDYvW93WctZ-ZrDZF4ftNZuwV9ueJBQpwO8YT6u=w2400'>",
+      "body": "<p>This final project was completed for Bootcamp 201. It takes user input to create a canvas depicting weather that reflects your mood. User settings settings can be saved for future access as well</p>"
+    }
+  ]
