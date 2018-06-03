@@ -28,8 +28,8 @@
                 <span class="icon-menu"></span>
                 <input type="checkbox">
                 <ul>
-                    <li id="home-tab"><a href="#home">Home</a></li>
-                    <li id="about-tab"><a href="#about">About</a></li>
+                    <li id="home-tab"><a href="/">Home</a></li>
+                    <li id="about-tab"><a href="/about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -73,9 +73,12 @@
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
-        <script type="text/javascript" src="scripts/app.js"></script>
-        <script type="text/javascript"  src="scripts/appView.js"></script>
-        <script type="text/javascript" src="scripts/animation.js"></script>
+        <script type="text/javascript" src="scripts/model/app.js"></script>
+        <script type="text/javascript"  src="scripts/view/appView.js"></script>
+        <script type="text/javascript" src="scripts/view/animation.js"></script>
+        <script type="text/javascript" src="scripts/controller/aboutController.js"></script>
+        <script type="text/javascript" src="scripts/controller/projectController.js"></script>
+        <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
         <script>
             Project.fetchAll();
         </script>
