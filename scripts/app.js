@@ -24,16 +24,15 @@ Project.fetchAll = function() {
   var parsed = JSON.parse(localStorage.rawData);
   Project.loadAll(parsed);
   pageView.initIndexPage();
-} else {
-    $.ajax({
-    dataType: 'json',
-    url: '../data/projectsdata.json', 
-    data: 'data',
-    success: function(data) {
-    localStorage.setItem("rawData", JSON.stringify(data));
-    console.log(data);
-        }
-    });
+  } else {
+  $.ajax({
+  dataType: 'json',
+  url: '../data/projectsdata.json',
+  data: 'data',
+  success: function(data) {
+  localStorage.setItem("rawData", JSON.stringify(data));
+  Project.loadAll(data);
   pageView.initIndexPage();
-  };
-}
+  }
+  });
+};
