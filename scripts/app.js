@@ -5,6 +5,7 @@ function Project (rawDataObj) {
      this.title = rawDataObj.title;
      this.body = rawDataObj.body;
   }
+
 Project.all = [];
 
 Project.prototype.toHtml = function() {
@@ -14,7 +15,25 @@ Project.prototype.toHtml = function() {
 
 Project.loadAll = function(rawData) {
   rawData.forEach(function(projectObject) {
-    projects.push(new Project(projectObject));
+    Project.all.push(new Project(projectObject));
   });
 }
-  
+
+Project.fetchAll = function() {
+  if(localStorage.rawData){
+  var parsed = JSON.parse(localStorage.rawData);
+  Project.loadAll(parsed);
+  pageView.initIndexPage();
+} else {
+    $.ajax({
+    dataType: 'json',
+    url: '../data/projectsdata.json', 
+    data: 'data',
+    success: function(data) {
+    localStorage.setItem("rawData", JSON.stringify(data));
+    console.log(data);
+        }
+    });
+  pageView.initIndexPage();
+  };
+}
