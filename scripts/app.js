@@ -9,14 +9,14 @@ function Project (rawDataObj) {
 Project.all = [];
 
 Project.prototype.toHtml = function() {
-    var templateFiller = Handlebars.compile( $('#article-template').text());
+    var templateFiller = Handlebars.compile($('#article-template').text());
     return templateFiller(this);
 };
 
 Project.loadAll = function(rawData) {
   rawData.forEach(function(projectObject) {
     Project.all.push(new Project(projectObject));
-  });
+  })
 }
 
 Project.fetchAll = function() {
