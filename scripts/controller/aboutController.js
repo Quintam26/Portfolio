@@ -4,7 +4,7 @@
 const aboutController = {};
 
 aboutController.show = function() {
-    $('.tab-content').hide();
+    $('#page1, #page3, #page4').hide();
     $('#page2').show();    
 }
 

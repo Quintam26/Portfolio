@@ -1,6 +1,7 @@
 'use strict';
 
-page('/', projectController.home);
+page('/', homeController.show);
 page('/about', aboutController.show);
+page('/portfolio', projectController.show);
 
 page();
