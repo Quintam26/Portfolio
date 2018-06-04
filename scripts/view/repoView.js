@@ -13,7 +13,7 @@
         var templateScript = $('#repo-template').text();
         var template = Handlebars.compile(templateScript);
         return template(repo);
-    }
+    };
 
     repoView.index = function() {
         ui();
@@ -21,5 +21,6 @@
             repos.with('name').map(render)
         );
     };
+
     module.repoView = repoView;
-});(window);
+})(window);

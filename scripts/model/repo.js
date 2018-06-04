@@ -13,6 +13,7 @@ repos.requestRepos = function(callback){
     success: function(data) {
         repos.all = data;
         callback();
+        console.log(data);
         }
     });
 };
