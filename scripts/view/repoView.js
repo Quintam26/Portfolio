@@ -4,9 +4,9 @@
     const repoView = {};
 
     const ui = function() {
-        let $page2 = $('#page2');
-        $page2.find('ul').empty();
-        $page2.show().siblings().hide();
+        let $about = $('#page3');
+        $about.find('ul').empty();
+        $about.show().siblings().hide();
     };
 
     const render = function(repo){
@@ -17,7 +17,7 @@
 
     repoView.index = function() {
         ui();
-        $('#page2 ul').append(
+        $('#page3 ul').append(
             repos.with('name').map(render)
         );
     };

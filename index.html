@@ -20,12 +20,11 @@
         <script id="repo-template" type="text/x-handlebars-template">
             <li>
               <a href="{{html_url}}" target="_blank">
-                <h3>{{name}}</h3>
+                <h1>{{name}}</h1>
               </a>
               <p>Description: {{description}}</p>
               <p>Language: {{language}}</p>
               <p>Created: {{created_at}}</p>
-              <p>Last updated: {{updated_at}}</p>
               {{#if watchers_count}}
                 <p>{{watchers_count}} watching this repo</p>
               {{/if}}
@@ -72,6 +71,7 @@
                                 <p></p>
                             </div>
                         </div>
+                        <ul></ul>
             </div>
             <div id="page4">
                 <a id="contact" class="smooth"></a>
