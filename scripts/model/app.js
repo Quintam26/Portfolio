@@ -34,7 +34,7 @@ Project.fetchAll = function() {
     success: function(data) {
     localStorage.setItem("rawData", JSON.stringify(data));
     Project.loadAll(data);
-
+    pageView.initIndexPage();
       }
     });
   };
